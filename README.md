@@ -222,14 +222,6 @@ After creating products, copy their IDs into `draugiem.iap` in platforms.json.
 
 > ℹ️ Exporting strings and sending them to Olafs for review is handled in Prerequisites → share localizations. This step is only the import after Olafs returns the reviewed sheet.
 
-8.0 Перед импортом убедитесь что вы не затрёте более свежую версию — проверьте историю файла на GitHub:
-
-```
-https://github.com/Clever-Apps-Pte-Ltd/[GAME_SHORT_NAME]/commits/master/res/localization/lv.json
-```
-
-Если последний коммит уже содержит актуальные переводы — импорт не нужен.
-
 8.1 Import the reviewed translations:
 
 1. Откройте CI-чат игры (для merge-игр — CI Merge)
@@ -242,9 +234,7 @@ https://github.com/Clever-Apps-Pte-Ltd/[GAME_SHORT_NAME]/commits/master/res/loca
    > ⚠️ URL **обязательно должен содержать `#gid=ID`** (например `#gid=0`), иначе бот вернёт ошибку `Spreadsheet url must contain list ID`.
 5. Дождитесь сообщения `finish`
 
-После импорта откройте игру на frype.com, зайдите в Settings → Language → Latviešu и проверьте что UI отображается на латышском.
-
-🖼️ Result example: *(add screenshot)*
+🖼️ Result example: https://gyazo.com/626f5346f44b844237c0aaae5ef7c727
 
 8.2 Ask the developer to rebuild and redeploy the game so the new translations go live.
 
