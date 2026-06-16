@@ -11,7 +11,7 @@ Replace the placeholders below with your game's values before you start:
 | `[APP_URL]` | Production HTML5 build URL | `hustlemerge.cleverappssg.com/publish/html5/` |
 | `[GOOGLE_PLAY_URL]` | Google Play link | `play.google.com/store/apps/details?id=com.cleverapps.hustlemerge` |
 | `[APP_STORE_URL]` | App Store link (must start with `itunes.apple.com/lv/...`) | `itunes.apple.com/lv/app/id6670314553` |
-| `[APP_KEY]` | API key from the app dashboard | (from frype.com dashboard) |
+| `[APP_KEY]` | API key from the app dashboard | 991742c1ec70574d95ca2119de38309a |
 | `[CI_BOT]` | Telegram CI bot for your game | `@cleverapps_stands_bot` (for merge games) |
 
 ---
