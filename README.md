@@ -208,7 +208,7 @@ After creating products, copy their IDs into `draugiem.iap` in platforms.json.
 
 7.3 After deploy, open https://www.frype.com/[GAME_SHORT_NAME] and verify that a test purchase completes successfully.
 
-🖼️ Result example: *(add screenshot)*
+🖼️ Result example: https://gyazo.com/3d2e2683d2c7491a01a9e0688aa5ba17
 
 **Troubleshooting:**
 
