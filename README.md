@@ -238,10 +238,10 @@ After creating products, copy their IDs into `draugiem.iap` in platforms.json.
 
 8.2 Ask the developer to rebuild and redeploy the game so the new translations go live.
 
-Переводы — мелкое изменение, поэтому делается **патч** от предыдущей production-ветки. Напишите разработчику:
+Переводы — мелкое изменение, поэтому делается **патч** от предыдущей production-ветки. Напишите разработчику, прикрепив коммит из гитхаба:
 
 ```
-@EvgenySenckewitch Залил переводы для [GAME_SHORT_NAME] (Latvian) в master. Создай, пожалуйста, патч и добавь туда эти изменения. Как будет готово, напиши в чат.
+@EvgenySenckewitch Залил переводы для [GAME_SHORT_NAME] (Latvian) в master. Создай, пожалуйста, патч и добавь туда эти изменения. Как будет готово, напиши в чат. Вот коммит https://github.com/Clever-Apps-Pte-Ltd/hustlemerge/commit/e859a6d627e60d843d11f7510b98d710dd9c0e58
 ```
 
 После подтверждения от разработчика — **не запускайте build самостоятельно**. Сборки делаются по расписанию и координируются с командой. Напишите в CI-чат, прикрепив ссылку на коммит:
@@ -258,7 +258,7 @@ After creating products, copy their IDs into `draugiem.iap` in platforms.json.
 
 После деплоя проверьте латышский язык в игре на frype.com.
 
-🖼️ Result example: *(add screenshot)*
+🖼️ Result example: https://gyazo.com/760df6e0cc356c7d5ed20e1000bec3f8
 
 ---
 
@@ -268,7 +268,7 @@ After creating products, copy their IDs into `draugiem.iap` in platforms.json.
 
 > ⚠️ Перед отправкой убедитесь что загружена иконка **16×16** — без неё нельзя включить activities. Страница покажет: *"You can have activities enabled only when you add an 16×16 px icon."*
 
-🖼️ Result example: *(add screenshot)*
+🖼️ Result example: https://gyazo.com/94790147ed5cdab3376120c4fdef11f0
 
 9.2 Send email to request payments approval:
 
@@ -314,4 +314,4 @@ Have a good day!
 
 10.4 Notify Olafs that the game and translations are ready — he will start promo on his side.
 
-🖼️ Result example: *(add screenshot)*
+🖼️ Result example: https://gyazo.com/9d139ece5c1a5bb8bf650421160e4804
