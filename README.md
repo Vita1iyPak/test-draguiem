@@ -6,7 +6,7 @@ Replace the placeholders below with your game's values before you start:
 | Placeholder | What to substitute | Example (Castle Craft) |
 |---|---|---|
 | `[GAME_TITLE]` | Public game title | Castle Craft |
-| `[GAME_SHORT_NAME]` | Internal slug (latin, lowercase) | hustlemerge |
+| `[GAME_SHORT_NAME]` | Working title (GitHub) | hustlemerge |
 | `[APP_ID]` | App ID on frype.com | 15021196 |
 | `[APP_URL]` | Production HTML5 build URL | `hustlemerge.cleverappssg.com/publish/html5/` |
 | `[GOOGLE_PLAY_URL]` | Google Play link | `play.google.com/store/apps/details?id=com.cleverapps.hustlemerge` |
