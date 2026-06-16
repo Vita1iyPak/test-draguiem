@@ -1,18 +1,18 @@
 # Draugiem Platform Setup
 ⏰ Estimated Time: ~2–3 hours (excluding waiting time for Olafs approval and Latvian translation review)
 
-По всему тексту встречаются плейсхолдеры — замените их на значения своей игры:
+Replace the placeholders below with your game's values before you start:
 
-| Плейсхолдер | Что подставить | Пример (Castle Craft) |
+| Placeholder | What to substitute | Example (Castle Craft) |
 |---|---|---|
-| `[GAME_TITLE]` | Публичное название игры | Castle Craft |
-| `[GAME_SHORT_NAME]` | Internal slug (латиница, lowercase) | hustlemerge |
-| `[APP_ID]` | ID приложения на frype.com | 15021196 |
-| `[APP_URL]` | URL продакшн-сборки HTML5 | `hustlemerge.cleverappssg.com/publish/html5/` |
-| `[GOOGLE_PLAY_URL]` | Ссылка на Google Play | `play.google.com/store/apps/details?id=com.cleverapps.hustlemerge` |
-| `[APP_STORE_URL]` | Ссылка на App Store (обязательно `itunes.apple.com/lv/...`) | `itunes.apple.com/lv/app/id6670314553` |
-| `[APP_KEY]` | API key из дашборда приложения | (из дашборда frype.com) |
-| `[CI_BOT]` | Telegram CI-бот для вашей игры | `@cleverapps_stands_bot` (для merge-игр) |
+| `[GAME_TITLE]` | Public game title | Castle Craft |
+| `[GAME_SHORT_NAME]` | Internal slug (latin, lowercase) | hustlemerge |
+| `[APP_ID]` | App ID on frype.com | 15021196 |
+| `[APP_URL]` | Production HTML5 build URL | `hustlemerge.cleverappssg.com/publish/html5/` |
+| `[GOOGLE_PLAY_URL]` | Google Play link | `play.google.com/store/apps/details?id=com.cleverapps.hustlemerge` |
+| `[APP_STORE_URL]` | App Store link (must start with `itunes.apple.com/lv/...`) | `itunes.apple.com/lv/app/id6670314553` |
+| `[APP_KEY]` | API key from the app dashboard | (from frype.com dashboard) |
+| `[CI_BOT]` | Telegram CI bot for your game | `@cleverapps_stands_bot` (for merge games) |
 
 ---
 
@@ -22,26 +22,26 @@ Copy this checklist and rename it for a specific game. Once all of the steps fro
 
 [Checklist](https://docs.google.com/spreadsheets/d/1_PlNiliAx0hxyWPyZv-UYQal89YJUJnb9OzYrWuwwGY/edit?gid=1527026538#gid=1527026538)
 
-Что должно быть сделано до начала:
+Make sure the following is done before you start:
 
-- [ ] **Account access** — есть логин/пароль от аккаунта менеджера на frype.com (хранится в чеклисте)
-- [ ] **iap enabled** — Paid Services включены для приложения (активирует Olafs)
-- [ ] **share localizations** — таблица с латышскими переводами подготовлена и отправлена Olafs на ревью
-- [ ] **list of promos** — файл `draugiemproducts.js` добавлен в репо (`cleverapps/src/[GAME_SHORT_NAME]/draugiemproducts.js`) — попросите разработчика
-- [ ] **Assets** — все промо-материалы для Draugiem готовы (см. шаг 5). ⚠️ `banner_1920x1080` должен быть в формате `.png`, не `.jpg`. Если у вас `.jpg` — попросите художников из Launch team (`@anton_prokudiin`) предоставить `.png`.
+- [ ] **Account access** — you have the manager account login/password for frype.com (stored in the checklist)
+- [ ] **iap enabled** — Paid Services are enabled for the app (activated by Olafs)
+- [ ] **share localizations** — the Latvian translations spreadsheet is prepared and sent to Olafs for review
+- [ ] **list of promos** — `draugiemproducts.js` is added to the repo (`cleverapps/src/[GAME_SHORT_NAME]/draugiemproducts.js`) — ask the developer
+- [ ] **Assets** — all Draugiem promo materials are ready (see step 5). ⚠️ `banner_1920x1080` must be `.png`, not `.jpg`. If you have `.jpg` — ask the Launch team artists (`@anton_prokudiin`) to provide `.png`.
 
 ---
 
 ## 2. Create app on Draugiem (Manager)
 
-> ℹ️ Платформа доступна по двум доменам: **draugiem.lv** и **frype.com** — это одно и то же. Используйте **frype.com** (на нём английский интерфейс).
+> ℹ️ The platform is available at two domains: **draugiem.lv** and **frype.com** — they are the same. Use **frype.com** (it has an English interface).
 
 2.1 Go to https://www.frype.com/applications/dev/myapps/ and click **Create Integrated Application**.
 
 2.2 Fill in the form:
 
 - Title: `[GAME_TITLE]`
-- Short name: `[GAME_SHORT_NAME]` (только латиница, lowercase)
+- Short name: `[GAME_SHORT_NAME]` (latin only, lowercase)
 - URL: `https://[APP_URL]`
 - Description: (short game description)
 - Developer email: `cleverappssg@gmail.com`
@@ -107,7 +107,7 @@ bash cleverapps/common/cacheconfigs/cacheconfigs.bash
 
 - **Application URL (mobile web):** `https://[APP_URL]` — same value as Application URL. This field controls game availability in the mobile version of draugiem.lv.
 
-> ℹ️ Чекбокс "Works on mobile devices" (Aplikācija darbojas mobilajās iekārtās) отсутствует на frype.com — мобильная поддержка управляется через поле "Application URL (mobile web)" выше.
+> ℹ️ The "Works on mobile devices" checkbox (Aplikācija darbojas mobilajās iekārtās) is absent on frype.com — mobile support is controlled via the "Application URL (mobile web)" field above.
 
 4.3 Check the boxes:
 
@@ -119,7 +119,7 @@ bash cleverapps/common/cacheconfigs/cacheconfigs.bash
 - ☑ Surname (Uzvārds)
 - ☑ Picture (Bilde)
 
-> ℹ️ Поле "Kāpēc šie dati ir nepieciešami?" may appear only after enabling Permissions. If it appears, enter: `We use persons name and picture to list in players top in tournaments and to view friends progress`
+> ℹ️ The "Kāpēc šie dati ir nepieciešami?" field may appear only after enabling Permissions. If it appears, enter: `We use persons name and picture to list in players top in tournaments and to view friends progress`
 
 4.5 Don't forget to save changes at the bottom of the screen.
 
@@ -173,12 +173,12 @@ Generated assets will appear in `promo/draugiem`.
 
 Administrators:
 
-| Пользователь | Профиль |
+| User | Profile |
 |---|---|
 | Vsevolod Laskavyi | https://www.frype.com/user/5536860/ |
 | Viacheslav Romanov | https://www.frype.com/user/5531190/ |
 
-> ℹ️ При добавлении есть dropdown **Loma (роль)** — выберите **Administrator**.
+> ℹ️ There is a **Loma (role)** dropdown when adding — select **Administrator**.
 
 ---
 
@@ -194,7 +194,7 @@ For each product fill in:
 
 - **Status callback URL:** `https://pay.cleverappssg.com/[GAME_SHORT_NAME]/draugiempayment`
 
-> ⚠️ Используйте именно этот URL (HTTPS, через `pay.cleverappssg.com`). Старый формат `http://[GAME_SHORT_NAME].cleverappssg.com/heroes-rest/draugiempayment` — неверный.
+> ⚠️ Use exactly this URL (HTTPS, via `pay.cleverappssg.com`). The old format `http://[GAME_SHORT_NAME].cleverappssg.com/heroes-rest/draugiempayment` is incorrect.
 
 After creating products, copy their IDs into `draugiem.iap` in platforms.json.
 
@@ -212,9 +212,9 @@ After creating products, copy their IDs into `draugiem.iap` in platforms.json.
 
 **Troubleshooting:**
 
-❌ `Load products: 0` / покупка не проходит, валюта не зачисляется — на сервере задеплоена старая версия кода. Попросите `@akargapolov` задеплоить актуальную версию. После деплоя проверьте версию JS-файлов в консоли браузера, затем повторите тест.
+❌ `Load products: 0` / purchase fails, currency not credited — the server has an outdated version deployed. Ask `@akargapolov` to deploy the latest version. After deploy, check the JS file version in the browser console, then retest.
 
-❌ Сервер возвращает `{"code":"error"}` при валидации покупки — в продуктах на Draugiem прописан неверный Status callback URL. В каждом продукте (Paid services → Edit) исправьте URL на `https://pay.cleverappssg.com/[GAME_SHORT_NAME]/draugiempayment`.
+❌ Server returns `{"code":"error"}` when validating a purchase — the Status callback URL in Draugiem products is incorrect. In each product (Paid services → Edit) fix the URL to `https://pay.cleverappssg.com/[GAME_SHORT_NAME]/draugiempayment`.
 
 ---
 
@@ -224,39 +224,37 @@ After creating products, copy their IDs into `draugiem.iap` in platforms.json.
 
 8.1 Import the reviewed translations:
 
-1. Откройте CI-чат игры (для merge-игр — CI Merge)
-2. Напишите боту: `[CI_BOT] localize [GAME_SHORT_NAME]`
-3. Выберите команду **import**
-4. Вставьте URL таблицы в формате:
+1. Open the CI chat of the game (CI Merge for merge games)
+2. Send to the bot: `[CI_BOT] localize [GAME_SHORT_NAME]`
+3. Select command **import**
+4. Paste the spreadsheet URL in the format:
    ```
    https://docs.google.com/spreadsheets/d/[SPREADSHEET_ID]/edit#gid=[GID]
    ```
-   > ⚠️ URL **обязательно должен содержать `#gid=ID`** (например `#gid=0`), иначе бот вернёт ошибку `Spreadsheet url must contain list ID`.
-5. Дождитесь сообщения `finish`
+   > ⚠️ The URL **must contain `#gid=ID`** (e.g. `#gid=0`), otherwise the bot will return error `Spreadsheet url must contain list ID`.
+5. Wait for the `finish` message
 
 🖼️ Result example: https://gyazo.com/626f5346f44b844237c0aaae5ef7c727
 
 8.2 Ask the developer to rebuild and redeploy the game so the new translations go live.
 
-Переводы — мелкое изменение, поэтому делается **патч** от предыдущей production-ветки. Напишите разработчику, прикрепив коммит из гитхаба:
+Translations are a small change, so a **patch** is made from the previous production branch. Message the developer with the commit link from GitHub:
 
 ```
 @EvgenySenckewitch Залил переводы для [GAME_SHORT_NAME] (Latvian) в master. Создай, пожалуйста, патч и добавь туда эти изменения. Как будет готово, напиши в чат. Вот коммит https://github.com/Clever-Apps-Pte-Ltd/hustlemerge/commit/e859a6d627e60d843d11f7510b98d710dd9c0e58
 ```
 
-После подтверждения от разработчика — **не запускайте build самостоятельно**. Сборки делаются по расписанию и координируются с командой. Напишите в CI-чат, прикрепив ссылку на коммит:
+After the developer confirms — **do not trigger a build yourself**. Builds are done on schedule and coordinated with the team. Post in the CI chat with the patch commit link:
 
 ```
 Евгений сделал патч по переводам для [GAME_SHORT_NAME]. Ссылка на коммит с патчем https://github.com/Clever-Apps-Pte-Ltd/hustlemerge/commit/8a84ba092f561e7a70ef616ad384a1551d46b658 Можно ли включить в следующий деплой?
 ```
-> ℹ️ Если плановый деплой будет не скоро и нужно выкатить переводы срочно — запустите сборку вручную через CI-бот:
+> ℹ️ If the scheduled deploy is not coming soon and you need to release translations urgently, trigger the build manually via the CI bot:
+>
+> 1. `[CI_BOT] directbuild [GAME_SHORT_NAME]` — adds the build task directly to the builder
+> 2. `[CI_BOT] deploy [GAME_SHORT_NAME]` — deploys the release version
 
-1. Напишите боту: `[CI_BOT] directbuild [GAME_SHORT_NAME]`  
-   (добавляет задачу напрямую в builder)
-2. После сборки: `[CI_BOT] deploy [GAME_SHORT_NAME]`  
-   (деплоит release-версию)
-
-После деплоя проверьте латышский язык в игре на frype.com.
+After deploy, verify Latvian language in the game on frype.com.
 
 🖼️ Result example: https://gyazo.com/760df6e0cc356c7d5ed20e1000bec3f8
 
@@ -266,7 +264,7 @@ After creating products, copy their IDs into `draugiem.iap` in platforms.json.
 
 9.1 Go to frype.com → app → Applications section, check **publish application** and click **Send for approval**.
 
-> ⚠️ Перед отправкой убедитесь что загружена иконка **16×16** — без неё нельзя включить activities. Страница покажет: *"You can have activities enabled only when you add an 16×16 px icon."*
+> ⚠️ Before submitting, make sure the **16×16** icon is uploaded — without it you cannot enable activities. The page will show: *"You can have activities enabled only when you add an 16×16 px icon."*
 
 🖼️ Result example: https://gyazo.com/94790147ed5cdab3376120c4fdef11f0
 
@@ -289,12 +287,12 @@ Have a good day!
 
 ## 10. Test & Launch (Manager)
 
-**Olafs Kublinskis** — менеджер платформы Draugiem.lv. Он проверяет переводы, одобряет публикацию и инициирует промо со своей стороны.
+**Olafs Kublinskis** — Draugiem.lv platform manager. He reviews translations, approves the publication, and initiates promo on his side.
 
 10.1 Send Olafs:
 
-- Описание игры на английском и латышском (можно взять из Google Play и перевести)
-- Визуалы из папки `promo/draugiem/` репозитория
+- Game description in English and Latvian (can be taken from Google Play and translated)
+- Visuals from the `promo/draugiem/` folder in the repo
 
 10.2 Typical questions from Olafs:
 
@@ -306,11 +304,11 @@ Have a good day!
 
 10.3 After moderation approval, verify:
 
-- Игра загружается по публичной ссылке `https://www.frype.com/[GAME_SHORT_NAME]`
-- UI отображается на латышском (Settings → Language → Latvijas)
-- Магазин открывается, продукты видны
-- Тестовая покупка проходит успешно
-- Игра видна в каталоге приложений Draugiem
+- Game loads at the public URL `https://www.frype.com/[GAME_SHORT_NAME]`
+- UI is displayed in Latvian (Settings → Language → Latvijas)
+- Shop opens, products are visible
+- Test purchase completes successfully
+- Game is visible in the Draugiem app catalog
 
 10.4 Notify Olafs that the game and translations are ready — he will start promo on his side.
 
