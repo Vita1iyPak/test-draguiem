@@ -307,7 +307,7 @@ Have a good day!
 10.3 After moderation approval, verify:
 
 - Игра загружается по публичной ссылке `https://www.frype.com/[GAME_SHORT_NAME]`
-- UI отображается на латышском (Settings → Language → Latviešu)
+- UI отображается на латышском (Settings → Language → Latvijas)
 - Магазин открывается, продукты видны
 - Тестовая покупка проходит успешно
 - Игра видна в каталоге приложений Draugiem
