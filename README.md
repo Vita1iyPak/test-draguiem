@@ -257,6 +257,7 @@ After the developer confirms — **do not trigger a build yourself**. Builds are
 After deploy, verify Latvian language in the game on frype.com.
 
 🖼️ Result example: https://gyazo.com/760df6e0cc356c7d5ed20e1000bec3f8
+
 🖼️ Result example: https://gyazo.com/ee8c11ddca4e8d6d937d28eb6bfb7a00
 
 ---
