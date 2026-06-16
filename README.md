@@ -41,7 +41,7 @@ Make sure the following is done before you start:
 2.2 Fill in the form:
 
 - Title: `[GAME_TITLE]`
-- Short name: `[GAME_SHORT_NAME]` (latin only, lowercase)
+- Short name: `[GAME_SHORT_NAME]` Working title (GitHub)
 - URL: `https://[APP_URL]`
 - Description: (short game description)
 - Developer email: `cleverappssg@gmail.com`
