@@ -241,13 +241,13 @@ After creating products, copy their IDs into `draugiem.iap` in platforms.json.
 Translations are a small change, so a **patch** is made from the previous production branch. Message the developer with the commit link from GitHub:
 
 ```
-@EvgenySenckewitch Залил переводы для [GAME_SHORT_NAME] (Latvian) в master. Создай, пожалуйста, патч и добавь туда эти изменения. Как будет готово, напиши в чат. Вот коммит https://github.com/Clever-Apps-Pte-Ltd/hustlemerge/commit/e859a6d627e60d843d11f7510b98d710dd9c0e58
+@EvgenySenckewitch Залил переводы для [GAME_SHORT_NAME] (Latvian) в master. Создай, пожалуйста, патч и добавь туда эти изменения. Как будет готово, напиши в чат. Вот коммит [COMMIT_LINK]
 ```
 
 After the developer confirms — **do not trigger a build yourself**. Builds are done on schedule and coordinated with the team. Post in the CI chat with the patch commit link:
 
 ```
-Евгений сделал патч по переводам для [GAME_SHORT_NAME]. Ссылка на коммит с патчем https://github.com/Clever-Apps-Pte-Ltd/hustlemerge/commit/8a84ba092f561e7a70ef616ad384a1551d46b658 Можно ли включить в следующий деплой?
+Евгений сделал патч по переводам для [GAME_SHORT_NAME]. Ссылка на коммит с патчем [COMMIT_LINK] Можно ли включить в следующий деплой?
 ```
 > ℹ️ If the scheduled deploy is not coming soon and you need to release translations urgently, trigger the build manually via the CI bot:
 >
