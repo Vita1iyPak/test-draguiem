@@ -88,7 +88,7 @@ bash cleverapps/common/cacheconfigs/cacheconfigs.bash
 Как будет готово, пришли скриншот в чат.
 ```
 
-🖼️ Result example: *(add screenshot)*
+🖼️ Result example: https://gyazo.com/5a88da4a572b674d7fd5732ae21c9602
 
 ---
 
