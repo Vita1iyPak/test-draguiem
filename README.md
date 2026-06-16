@@ -198,7 +198,7 @@ For each product fill in:
 
 After creating products, copy their IDs into `draugiem.iap` in platforms.json.
 
-🖼️ Result example: *(add screenshot)*
+🖼️ Result example: https://gyazo.com/e7e431c899ca7e44a786a61d9b00b5b4
 
 7.2 After updating platforms.json, ask the developer to run cacheconfigs and redeploy again (same as step 3.3):
 
