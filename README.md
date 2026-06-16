@@ -268,7 +268,7 @@ After deploy, verify Latvian language in the game on frype.com.
 
 > ⚠️ Before submitting, make sure the **16×16** icon is uploaded — without it you cannot enable activities. The page will show: *"You can have activities enabled only when you add an 16×16 px icon."*
 
-🖼️ Result example: https://gyazo.com/94790147ed5cdab3376120c4fdef11f0
+🖼️ Result example: https://gyazo.com/a19855c0689ef2f3d0d9975956cb18cf
 
 9.2 Send email to request payments approval:
 
