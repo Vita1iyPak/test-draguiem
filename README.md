@@ -28,7 +28,7 @@ Copy this checklist and rename it for a specific game. Once all of the steps fro
 - [ ] **iap enabled** — Paid Services включены для приложения (активирует Olafs)
 - [ ] **share localizations** — таблица с латышскими переводами подготовлена и отправлена Olafs на ревью
 - [ ] **list of promos** — файл `draugiemproducts.js` добавлен в репо (`cleverapps/src/[GAME_SHORT_NAME]/draugiemproducts.js`) — попросите разработчика
-- [ ] **Assets** — все промо-материалы для Draugiem готовы (см. шаг 5). ⚠️ `banner_1920x1080` должен быть в формате `.png`, не `.jpg`. Если у вас `.jpg` — попросите художников из Launch team (`@KristinaKarimovaFuFu`) предоставить `.png`.
+- [ ] **Assets** — все промо-материалы для Draugiem готовы (см. шаг 5). ⚠️ `banner_1920x1080` должен быть в формате `.png`, не `.jpg`. Если у вас `.jpg` — попросите художников из Launch team (`@anton_prokudiin`) предоставить `.png`.
 
 ---
 
