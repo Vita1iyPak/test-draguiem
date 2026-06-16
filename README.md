@@ -123,7 +123,7 @@ bash cleverapps/common/cacheconfigs/cacheconfigs.bash
 
 4.5 Don't forget to save changes at the bottom of the screen.
 
-🖼️ Result example: *(add screenshot)*
+🖼️ Result example: https://gyazo.com/94790147ed5cdab3376120c4fdef11f0
 
 ---
 
