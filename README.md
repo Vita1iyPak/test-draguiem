@@ -20,7 +20,7 @@
 
 Copy this checklist and rename it for a specific game. Once all of the steps from Draugiem Tab are completed, attach the spreadsheet to the task and proceed with the integration.
 
-[Чеклист](https://docs.google.com/spreadsheets/d/1_PlNiliAx0hxyWPyZv-UYQal89YJUJnb9OzYrWuwwGY/edit?gid=1527026538#gid=1527026538)
+[Checklist](https://docs.google.com/spreadsheets/d/1_PlNiliAx0hxyWPyZv-UYQal89YJUJnb9OzYrWuwwGY/edit?gid=1527026538#gid=1527026538)
 
 Что должно быть сделано до начала:
 
