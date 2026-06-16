@@ -249,6 +249,12 @@ After creating products, copy their IDs into `draugiem.iap` in platforms.json.
 ```
 Евгений сделал патч по переводам для [GAME_SHORT_NAME]. Ссылка на коммит с патчем https://github.com/Clever-Apps-Pte-Ltd/hustlemerge/commit/8a84ba092f561e7a70ef616ad384a1551d46b658 Можно ли включить в следующий деплой?
 ```
+> ℹ️ Если плановый деплой будет не скоро и нужно выкатить переводы срочно — запустите сборку вручную через CI-бот:
+
+1. Напишите боту: `[CI_BOT] directbuild [GAME_SHORT_NAME]`  
+   (добавляет задачу напрямую в builder)
+2. После сборки: `[CI_BOT] deploy [GAME_SHORT_NAME]`  
+   (деплоит release-версию)
 
 После деплоя проверьте латышский язык в игре на frype.com.
 
