@@ -163,7 +163,7 @@ Generated assets will appear in `promo/draugiem`.
 
 5.4 Click **Edit welcome page** and upload 5 game screenshots (format `fb_1920×1080`, language `lv`).
 
-🖼️ Result example: *(add screenshot)*
+🖼️ Result example: https://gyazo.com/eecb4e2475a4573a8cbcd315d98bfa45
 
 ---
 
