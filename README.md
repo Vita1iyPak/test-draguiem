@@ -1,8 +1,4 @@
 # Draugiem Platform Setup
-
-> Обновлённая инструкция на основе реального опыта добавления Castle Craft (hustlemerge).  
-> Оригинал: [draugiem.md на GitHub](https://github.com/Clever-Apps-Pte-Ltd/cleverapps/blob/master/common/setup/platforms/draugiem.md)
-
 ⏰ Estimated Time: ~2–3 hours (excluding waiting time for Olafs approval and Latvian translation review)
 
 По всему тексту встречаются плейсхолдеры — замените их на значения своей игры:
