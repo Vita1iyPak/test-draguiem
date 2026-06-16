@@ -49,7 +49,7 @@ Copy this checklist and rename it for a specific game. Once all of the steps fro
 
 2.3 Save the form. You will get an **App ID** and **API Key** — copy them for the next step.
 
-🖼️ Result example: *(add screenshot of created app)*
+🖼️ Result example: https://gyazo.com/98a1c0df0168c24b93235c2a938ea71d
 
 ---
 
