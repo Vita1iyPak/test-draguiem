@@ -147,7 +147,7 @@ Choose the filters: "All", add event: "No". Bot will report that assets have bee
 
 Generated assets will appear in `promo/draugiem`.
 
-🖼️ Result example: https://gyazo.com/37bce621f7b7f3b3699cc9a275974953
+🖼️ Result example: https://gyazo.com/780629ce48791373093b83753a673ad8
 
 5.3 Upload assets to Draugiem dashboard (frype.com → app → Edit):
 
