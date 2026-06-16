@@ -302,7 +302,7 @@ Have a good day!
 |---|---|
 | Will the game be available in draugiem.lv mobile version? | Yes — "Application URL (mobile web)" is set |
 | Is the game available in fullscreen? | The game must implement it itself. Olafs recommends adding it (personal recommendation based on 11 years of user experience, not a platform requirement) |
-| When will translations be updated? | Confirm patch status with the developer |
+| When will translations be updated? | The translations are already updated and live. The game is ready to go public whenever you're ready to start the promo! |
 
 10.3 After moderation approval, verify:
 
