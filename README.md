@@ -249,10 +249,20 @@ After the developer confirms — **do not trigger a build yourself**. Builds are
 ```
 Евгений сделал патч по переводам для [GAME_SHORT_NAME]. Ссылка на коммит с патчем [COMMIT_LINK] Можно ли включить в следующий деплой?
 ```
-> ℹ️ If the scheduled deploy is not coming soon and you need to release translations urgently, trigger the build manually via the CI bot:
+> ℹ️ If the scheduled deploy is not coming soon and you need to release translations urgently, you can trigger the build yourself. Draugiem uses the web build — there is no separate draugiem build. The process:
+
+> 1. Ask the developer to create a patch: `version patch [GAME_SHORT_NAME]`
+> 2. Build (merge games always build together):
+>    ```
+>    @cleverapps_stands_bot version build mergecraft wondermerge hustlemerge all
+>    ```
+> 3. Test the build
+> 4. Deploy:
+>    ```
+>    @cleverapps_stands_bot deploy [GAME_SHORT_NAME] [VERSION]
+>    ```
 >
-> 1. `[CI_BOT] directbuild [GAME_SHORT_NAME]` — adds the build task directly to the builder
-> 2. `[CI_BOT] deploy [GAME_SHORT_NAME]` — deploys the release version
+> ⚠️ Do NOT use `directbuild` — it is a dangerous command that bypasses the normal patch/build flow.
 
 After deploy, verify Latvian language in the game on frype.com.
 
