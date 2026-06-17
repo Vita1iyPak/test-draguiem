@@ -254,7 +254,7 @@ After the developer confirms — **do not trigger a build yourself**. Builds are
 > 1. Ask the developer to create a patch: `version patch [GAME_SHORT_NAME]`
 > 2. Build (merge games always build together):
 >    ```
->    @cleverapps_stands_bot version build mergecraft wondermerge hustlemerge web
+>    @cleverapps_stands_bot version build mergecraft wondermerge hustlemerge fairy web
 >    ```
 > 3. Test the build
 > 4. Deploy:
